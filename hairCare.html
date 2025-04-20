@@ -45,7 +45,7 @@
     </nav>
 
     <section>
-        <img src="./img/slide3.JPG" alt="Skincare">
+        <img width="100%" src="./img/slide3.JPG" alt="Skincare">
     </section>
 
     <main>
@@ -124,8 +124,16 @@
         <div class="piePagina">
             <p>© Skincare Solutions 2025 - Todos los derechos reservados.</p>
         </div>
-
     </footer>
+
+    <script>
+        const toggleBtn = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.contenedorNav');
+
+        toggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('activo');
+        });
+    </script>
 
 </body>
 
