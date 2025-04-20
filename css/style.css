@@ -1,8 +1,8 @@
 :root {
-    --rosa: #e7c6d9;
-    --azul: #6c8bc1;
+    --rosa: #ebc7dd;
+    --azul: #8194b4;
     --verdeClaro: #eef4ef;
-    --verdeMedio: #c4dec5;
+    --verdeMedio: #8fb891;
     --verdeOscuro: #528e7b;
     --blanco: #FFF;
     --negro: #000;
@@ -12,12 +12,15 @@
 
 html {
     font-size: 62.5%;
-  }
-  *, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
 /** Globales **/
 body {
@@ -26,11 +29,10 @@ body {
     line-height: 1.5;
     font-family: var(--fuentePrincipal);
     font-optical-sizing: auto;
-    
+
 }
 
 a {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     color: var(--verdeOscuro);
 }
@@ -39,30 +41,54 @@ ul {
     list-style: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     text-align: center;
 }
+
 h1 {
     font-size: 4rem;
 }
+
 h2 {
     font-size: 3.2rem;
 }
+
 h3 {
     font-size: 2.2rem;
+}
+
+/** Utilidades **/
+.w-100 {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .w-100 {
+        width: auto;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.alinear-derecha {
+    justify-content: flex-end;
 }
 
 /** Header **/
 
 header {
-    background-color:var(--verdeOscuro);
+    background-color: var(--verdeOscuro);
     color: var(--blanco);
     text-decoration: none;
     padding: 1rem;
     text-align: center;
 }
 
-/*********** Navegación  *********/
+/********************* Navegación  ********************/
 
 @media (max-width: 767px) {
     nav {
@@ -90,14 +116,14 @@ header {
 
 nav {
     font-size: 2rem;
+    font-weight: 700;
     display: flex;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
-.contenedorNav
- {
+.contenedorNav {
     list-style: none;
     display: flex;
     gap: 2rem;
@@ -110,10 +136,10 @@ nav {
 .buscar {
     display: flex;
     align-items: center;
-    gap: 0.8rem; 
+    gap: 0.8rem;
     margin-left: auto;
     background-color: var(--blanco);
-    padding: 0.8rem 1rem; 
+    padding: 0.8rem 1rem;
     border-radius: 2rem;
     border: 1px solid #ccc;
     margin-right: 2rem;
@@ -124,13 +150,13 @@ nav {
     outline: none;
     font-size: 1rem;
     padding: 0.5rem;
-    width: 200px; /* Se agranda el ancho */
+    width: 250px;
     background: transparent;
 }
 
 .buscar input::placeholder {
-    font-size: 1.2rem; 
-    color: #888; 
+    font-size: 1.2rem;
+    color: #888;
 }
 
 /********* MENÚ HAMBURGUESA ***********/
@@ -161,14 +187,14 @@ nav {
     .contenedorNav.activo {
         display: flex;
     }
-    
+
 }
 
-/** Main **/
+/************ Main ************/
 
-main h2 {
+.mainh2 {
     background-color: var(--verdeMedio);
-    color: var(--negro);
+    color: var(--blanco);
     text-align: center;
     padding: 2rem;
     margin-bottom: 1.5rem;
@@ -180,7 +206,7 @@ main h2 {
 }
 
 .sombra {
-    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.59);
+    box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.59);
     background-color: var(--blanco);
     padding: 2rem;
     border-radius: 1rem;
@@ -188,12 +214,12 @@ main h2 {
     width: 100%;
 }
 
-/** Servicios **/
+/********* Servicios *********/
 
 .servicios {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1rem; 
+    column-gap: 1rem;
 }
 
 @media (max-width: 767px) {
@@ -205,14 +231,14 @@ main h2 {
     }
 }
 
-
 .servicio {
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
-.servicio h3{
+
+.servicio h3 {
     color: var(--azul);
     font-weight: normal;
 }
@@ -239,7 +265,7 @@ main h2 {
     width: 100%;
 }
 
-/** Footer **/
+/************** Footer ******************/
 
 @media (max-width: 767px) {
     .contenedorFooter {
@@ -267,7 +293,7 @@ footer h4 {
     padding: 1rem;
 }
 
-.redes { 
+.redes {
     margin-right: 2rem;
 
 }
@@ -277,3 +303,253 @@ footer h4 {
     text-align: center;
     padding: 1rem;
 }
+
+/****************** Contaco *********************/
+.formulario {
+    background-color: var(--verdeOscuro);
+    width: min(60rem, 100%);
+    margin: auto;
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--blanco)
+}
+
+@media (min-width: 768px) {
+    .contenedor-campos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+        margin: 1rem;
+    }
+
+    .campo:nth-child(3),
+    .campo:nth-child(4) {
+        grid-column: 1 / 3;
+    }
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.campo textarea {
+    height: 20rem;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem
+}
+
+.boton {
+    background-color: var(--verdeClaro);
+    color: var(--azul);
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .6rem;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+        margin-top: 4rem;
+    }
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+/********************** RUTINAS ********************/
+
+.rutina {
+    display: grid;
+    grid-template-columns: minmax(200px, 300px) 1fr;
+    gap: 30px;
+    align-items: start;
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .rutina:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Para invertir el orden en las secciones espejo */
+  .rutina-derecha {
+    direction: rtl;
+  }
+  
+  .rutina-derecha .contenido,
+  .rutina-derecha .contenido-texto {
+    direction: ltr;
+  }
+  
+  /* Imagen */
+  .contenido img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  /* Texto */
+  .contenido-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  .contenido-texto h3 {
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: white;
+  }
+ 
+  .titulo-seca {
+    background-color: var(--rosa);
+  }
+  
+  .titulo-mixta {
+    background-color: var(--verdeMedio);
+  }
+  
+  .titulo-grasa {
+    background-color: rgba(165, 176, 226, 0.85);
+  }
+  
+  .contenido-texto p {
+    margin-bottom: 8px;
+  }
+  
+  .contenido-texto ul {
+    padding-left: 20px;
+  }
+  
+  .contenido-texto li {
+    margin-bottom: 6px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .rutina {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .contenido-texto {
+      text-align: left;
+      padding: 0 10px;
+    }
+  
+    .contenido-texto h2 {
+      margin: 0 auto;
+    }
+  
+    .rutina-derecha {
+      direction: ltr;
+    }
+  }
+  
+/************************ HAIR CARE *************************/
+
+.care-section {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; 
+    gap: 20px; 
+    align-items: start;
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.care-section.reverse {
+  direction: rtl;
+}
+
+.care-section.reverse .text-content {
+  direction: ltr;
+}
+
+.care-section img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .care-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .care-section.reverse {
+    direction: ltr;
+  }
+}
+
+/************************* QUIENES SOMOS *****************/
+
+.quienes-somos {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .quienes-somos .imagen img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quienes-somos .descripcion {
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 12px rgba(211, 20, 93, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .quienes-somos p {
+    line-height: 1.8;
+  }
