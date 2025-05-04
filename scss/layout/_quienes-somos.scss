@@ -1,0 +1,29 @@
+@use 'base/variables' as *;
+@use 'base/globales' as *;
+
+.quienes-somos {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .quienes-somos .imagen img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quienes-somos .descripcion {
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 12px rgba(211, 20, 93, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .quienes-somos p {
+    line-height: 1.8;
+  }
