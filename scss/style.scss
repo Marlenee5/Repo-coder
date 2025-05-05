@@ -1,10 +1,2 @@
-@use "base/globales";
-@use "base/index";
-@use "base/variables";
-
-@use "layout/contacto";
-@use "layout/footer";
-@use "layout/haircare";
-@use "layout/header";
-@use "layout/quienes-somos";
-@use "layout/rutinas";
+@use 'base' as *;
+@use 'layout';

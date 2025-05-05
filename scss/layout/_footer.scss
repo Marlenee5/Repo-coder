@@ -1,5 +1,4 @@
-@use 'base/variables' as *;
-@use 'base/globales' as *;
+@use '../base' as *;
 
 @media (max-width: 767px) {
     .contenedorFooter {
@@ -13,11 +12,6 @@
     }
 }
 
-footer h4 {
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
 .contenedorFooter {
     background-color: $rosa;
     display: flex;
@@ -25,15 +19,19 @@ footer h4 {
     gap: 2rem;
     margin-top: 5rem;
     padding: 1rem;
-}
 
-.redes {
-    margin-right: 2rem;
+    footer h4 {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
 
+    .redes {
+        margin-right: 2rem;
+    }
 }
 
 .piePagina {
-    background-color: $celeste;
+    background-color: $azul;
     text-align: center;
     padding: 1rem;
 }

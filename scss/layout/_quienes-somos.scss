@@ -1,20 +1,18 @@
-@use 'base/variables' as *;
-@use 'base/globales' as *;
+@use '../base/index' as *;
 
 .quienes-somos {
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  .quienes-somos .imagen img {
+  text-align: center;
+  padding: 2rem;
+
+  .imagen img {
     width: 100%;
     max-width: 600px;
     height: auto;
     border-radius: 1.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
-  
-  .quienes-somos .descripcion {
+
+  .descripcion {
     margin-top: 2rem;
     padding: 2rem;
     border-radius: 1.5rem;
@@ -23,7 +21,8 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
-  .quienes-somos p {
+
+  p {
     line-height: 1.8;
   }
+}

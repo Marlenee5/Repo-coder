@@ -1,5 +1,4 @@
-@use 'base/variables' as *;
-@use 'base/globales' as *;
+@use '../base' as *;
 
 header {
     background-color: $verdeOscuro;
@@ -9,30 +8,32 @@ header {
     text-align: center;
 }
 
-/********************* Navegación  ********************/
+/*********** Navegación  *************/
 
 @media (max-width: 767px) {
     nav {
         flex-direction: column;
         align-items: flex-start;
+
+        .contenedorNav {
+            flex-direction: column;
+            gap: 1rem;
+            margin-left: 1rem;
+        }
+
+        .buscar {
+            margin: 1rem;
+            width: 90%;
+            flex-direction: row;
+            justify-content: space-between;
+
+            input {
+                width: 100%;
+            }
+        }
     }
 
-    .contenedorNav {
-        flex-direction: column;
-        gap: 1rem;
-        margin-left: 1rem;
-    }
 
-    .buscar {
-        margin: 1rem;
-        width: 90%;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .buscar input {
-        width: 100%;
-    }
 }
 
 nav {
@@ -42,42 +43,42 @@ nav {
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
-}
 
-.contenedorNav {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    padding: 0;
-    margin: 0;
-    margin-left: 2rem;
-}
+    .contenedorNav {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        padding: 0;
+        margin: 0;
+        margin-left: 2rem;
+    }
 
+    .buscar {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        margin-left: auto;
+        background-color: $blanco;
+        padding: 0.8rem 1rem;
+        border-radius: 2rem;
+        border: 1px solid #ccc;
+        margin-right: 2rem;
 
-.buscar {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    margin-left: auto;
-    background-color: $blanco;
-    padding: 0.8rem 1rem;
-    border-radius: 2rem;
-    border: 1px solid #ccc;
-    margin-right: 2rem;
-}
+        input {
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            padding: 0.5rem;
+            width: 250px;
+            background: transparent;
 
-.buscar input {
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    padding: 0.5rem;
-    width: 250px;
-    background: transparent;
-}
+            &::placeholder {
+                font-size: 1.2rem;
+                color: #888;
+            }
+        }
+    }
 
-.buscar input::placeholder {
-    font-size: 1.2rem;
-    color: #888;
 }
 
 /********* MENÚ HAMBURGUESA ***********/
@@ -103,9 +104,9 @@ nav {
         align-items: center;
         width: 100%;
         padding: 1rem;
-    }
 
-    .contenedorNav.activo {
-        display: flex;
+        .activo {
+            display: flex;
+        }
     }
 }

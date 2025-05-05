@@ -1,5 +1,4 @@
-@use 'base/variables' as *;
-@use 'base/globales' as *;
+@use '../base/index' as *;
 
 .formulario {
     background-color: $verdeOscuro;
@@ -8,10 +7,10 @@
     margin-top: 3rem;
     padding: 2rem;
     border-radius: 2rem;
-}
 
-.formulario fieldset {
-    border: none;
+    fieldset {
+        border: none;
+    }
 }
 
 .formulario legend {
@@ -40,38 +39,42 @@
 
 .campo {
     margin-bottom: 1rem;
-}
 
-.campo label {
-    color: $blanco;
-    font-weight: bold;
-    margin-bottom: .5rem;
-    display: block;
-}
+    label {
+        color: $blanco;
+        font-weight: bold;
+        margin-bottom: .5rem;
+        display: block;
+    }
 
-.campo textarea {
-    height: 20rem;
-}
+    textarea {
+        height: 20rem;
+    }
 
-.input-text {
-    width: 100%;
-    border: none;
-    padding: 1.5rem;
-    border-radius: .5rem
-}
+    .input-text {
+        width: 100%;
+        border: none;
+        padding: 1.5rem;
+        border-radius: .5rem
+    }
 
-.boton {
-    background-color: $verdeClaro;
-    color: $azul;
-    padding: 1rem 3rem;
-    font-size: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: .6rem;
-    width: 100%;
-    text-align: center;
-    border: none;
+    .boton {
+        background-color: $verdeClaro;
+        color: $azul;
+        padding: 1rem 3rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .6rem;
+        width: 100%;
+        text-align: center;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -79,8 +82,4 @@
         width: auto;
         margin-top: 4rem;
     }
-}
-
-.boton:hover {
-    cursor: pointer;
 }
