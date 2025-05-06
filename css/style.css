@@ -213,18 +213,18 @@ nav .buscar input::placeholder {
 }
 
 @media (max-width: 767px) {
-  .menu-toggle {
-    display: block;
-  }
   .contenedorNav {
-    display: none;
+    display: none !important;
     flex-direction: column;
     align-items: center;
     width: 100%;
     padding: 1rem;
   }
-  .contenedorNav .activo {
-    display: flex;
+  .contenedorNav.activo {
+    display: flex !important;
+  }
+  .menu-toggle {
+    display: block;
   }
 }
 @media (max-width: 767px) {
@@ -335,7 +335,8 @@ nav .buscar input::placeholder {
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
-.campo .boton {
+
+.boton {
   background-color: #eef4ef;
   color: #8194b4;
   padding: 1rem 3rem;
@@ -348,7 +349,7 @@ nav .buscar input::placeholder {
   text-align: center;
   border: none;
 }
-.campo .boton:hover {
+.boton:hover {
   cursor: pointer;
 }
 

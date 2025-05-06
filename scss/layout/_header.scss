@@ -84,7 +84,7 @@ nav {
 /********* MENÚ HAMBURGUESA ***********/
 
 .menu-toggle {
-    display: none;
+    display: none; // Oculta en pantallas grandes
     font-size: 3rem;
     background: none;
     border: none;
@@ -94,19 +94,19 @@ nav {
 }
 
 @media (max-width: 767px) {
-    .menu-toggle {
-        display: block;
-    }
-
     .contenedorNav {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 1rem;
-
-        .activo {
-            display: flex;
-        }
+      display: none !important; // <-- Forzalo si es necesario
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 1rem;
     }
-}
+  
+    .contenedorNav.activo {
+      display: flex !important; // <-- Asegurate que lo muestre cuando tiene la clase
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }

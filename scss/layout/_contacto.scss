@@ -57,23 +57,23 @@
         padding: 1.5rem;
         border-radius: .5rem
     }
+}
 
-    .boton {
-        background-color: $verdeClaro;
-        color: $azul;
-        padding: 1rem 3rem;
-        font-size: 2rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        border-radius: .6rem;
-        width: 100%;
-        text-align: center;
-        border: none;
+.boton {
+    background-color: $verdeClaro;
+    color: $azul;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .6rem;
+    width: 100%;
+    text-align: center;
+    border: none;
 
-        &:hover {
-            cursor: pointer;
-        }
+    &:hover {
+        cursor: pointer;
     }
 }
 
