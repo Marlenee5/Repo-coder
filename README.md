@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Marlene Oteiza</h1>
-<h3 align="center">A full stack programming student</h3>
+<h3 align="center">A Full Stack Programming Student</h3>
 
 - 🔭 I’m currently working on [Repo-coder](https://marlenee5.github.io/Repo-coder/)
 
@@ -7,8 +7,11 @@
 
 - 📫 How to reach me **marleneoteiza@outlook.com**
 
+- 📄 Know about my experiences [In my final project for the Front End course, I used technologies such as HTML, CSS, SASS, and some JavaScript.]
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
+<a href="https://www.linkedin.com/in/marlene-oteiza-9a818751/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="marlene oteiza" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
