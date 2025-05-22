@@ -4,7 +4,7 @@
     background-color: $verdeOscuro;
     width: min(60rem, 100%);
     margin: auto;
-    margin-top: 3rem;
+
     padding: 2rem;
     border-radius: 2rem;
 
@@ -81,5 +81,42 @@
     .boton {
         width: auto;
         margin-top: 4rem;
+    }
+}
+
+.cajaform {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 0.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    img {
+        width: 90%;
+        height: auto;
+        border-radius: 2rem;
+    }
+
+    .formulario {
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .cajaform {
+        grid-template-columns: 1fr;
+        text-align: center;
+
+        img {
+            max-width: 90%;
+        }
+
+        .formulario {
+            margin-top: 2rem;
+        }
     }
 }

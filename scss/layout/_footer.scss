@@ -18,7 +18,7 @@
     justify-content: space-evenly;
     gap: 2rem;
     margin-top: 5rem;
-    padding: 1rem;
+    padding: 2rem;
 
     footer h4 {
         margin-bottom: 1rem;
@@ -32,6 +32,7 @@
 
 .piePagina {
     background-color: $azul;
+    color: $blanco;
     text-align: center;
     padding: 1rem;
 }

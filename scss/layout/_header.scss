@@ -32,8 +32,6 @@ header {
             }
         }
     }
-
-
 }
 
 nav {
@@ -51,6 +49,10 @@ nav {
         padding: 0;
         margin: 0;
         margin-left: 2rem;
+
+        img {
+            width: 45px;
+        }
     }
 
     .buscar {
@@ -95,18 +97,18 @@ nav {
 
 @media (max-width: 767px) {
     .contenedorNav {
-      display: none !important; // <-- Forzalo si es necesario
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      padding: 1rem;
+        display: none !important;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
     }
-  
+
     .contenedorNav.activo {
-      display: flex !important; // <-- Asegurate que lo muestre cuando tiene la clase
+        display: flex !important;
     }
-  
+
     .menu-toggle {
-      display: block;
+        display: block;
     }
-  }
+}
